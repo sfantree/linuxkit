@@ -1,5 +1,5 @@
 name: LinuxKit CI
-on: [push, pull_request]
+on: workflow_dispatch
 
 env:
   TOTAL_SHARDS: 12   # change here once
