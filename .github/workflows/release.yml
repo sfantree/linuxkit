@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build-all:
     name: Build all targets expect macOS
-    if: github.ref_type == 'tag' && startsWith(github.ref, 'refs/tags/v')
+    #if: github.ref_type == 'tag' && startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     steps:
 
