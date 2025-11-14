@@ -526,7 +526,7 @@ func buildQemuCmdline(config QemuConfig) (QemuConfig, []string) {
 		if config.Arch == "s390x" {
 			qemuArgs = append(qemuArgs, "-object", rng, "-device", "virtio-rng-ccw,rng=rng0")
 		} else {
-			qemuArgs = append(qemuArgs, "-object", rng, "-device", "virtio-rng-pci,rng=rng0")
+			qemuArgs = qemuArgs //append(qemuArgs, "-object", rng, "-device", "virtio-rng-pci,rng=rng0")
 		}
 	}
 
